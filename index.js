@@ -1,8 +1,10 @@
 const express = require('express');
-
+var nofavicon = require('express-no-favicons');
 const app = express();
 
 // Init Middleware
+
+app.use(nofavicon());
 
 app.use(express.json({ extended: false }));
 
