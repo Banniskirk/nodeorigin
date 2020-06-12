@@ -7,9 +7,6 @@ const app = express();
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('API Running'));
-app.get('/talk', (req, res) => {
-  res.send('Bla bla bla');
-});
 
 // Define Routes
 
